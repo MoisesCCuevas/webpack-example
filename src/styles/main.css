@@ -1,0 +1,6 @@
+@import "https://fonts.gooogleapis.com/css?family=Ubuntu:300,400,500";
+
+@font-face {
+  font-family: 'Ubuntu';
+  src: url('../assests/fonts')
+}
