@@ -1,6 +1,8 @@
+/* descargando recurso */
 @import "https://fonts.gooogleapis.com/css?family=Ubuntu:300,400,500";
 
+/* importar de un directorio del proyecto, de esta forma no es necesario descargar el recurso */
 @font-face {
   font-family: 'Ubuntu';
-  src: url('../assests/fonts')
+  src: url('../assests/fonts') format("")
 }
