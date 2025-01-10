@@ -3,6 +3,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const CopyPlugin = require('copy-webpack-plugin');
 const Dotenv = require('dotenv-webpack');
+const BondleAnalyzer = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 
 module.exports = {
   // punto de entrada
@@ -14,6 +15,7 @@ module.exports = {
     filename: 'main.js'
   },
   mode: 'development',
+  devtool: 'source-map',
   watch: true,
   resolve: {
     extensions: ['.js'],
@@ -84,7 +86,8 @@ module.exports = {
         }
       ]
     }),
-    new Dotenv()
+    new Dotenv(),
+    new BondleAnalyzer()
   ],
   devServer: {
     contewntBase: path.join(__dirname, 'dist'),
