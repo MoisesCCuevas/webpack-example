@@ -90,7 +90,7 @@ module.exports = {
     new BondleAnalyzer()
   ],
   devServer: {
-    contewntBase: path.join(__dirname, 'dist'),
+    contentBase: path.join(__dirname, 'dist'),
     compress: true,
     historyApiFallback: true,
     port: 3006
